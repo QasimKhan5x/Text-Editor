@@ -40,15 +40,15 @@ public class TextEditor extends JFrame {
         AtomicBoolean foundMatch = new AtomicBoolean(false);
         List<ListIterator<String>> box = new ArrayList<>();
 
-        Icon  saveIcon = new ImageIcon ("Text Editor (1)\\icons\\save.jpg",
+        Icon  saveIcon = new ImageIcon ("icons/save.jpg",
                 "SaveButton");
-        Icon  loadIcon = new ImageIcon ("Text Editor (1)\\icons\\open.jpg",
+        Icon  loadIcon = new ImageIcon ("icons/open.jpg",
                 "OpenButton");
-        Icon  searchIcon = new ImageIcon ("Text Editor (1)\\icons\\search.jpg",
+        Icon  searchIcon = new ImageIcon ("icons/search.jpg",
                 "StartSearchButton");
-        Icon  backIcon = new ImageIcon ("Text Editor (1)\\icons\\back.jpg",
+        Icon  backIcon = new ImageIcon ("icons/back.jpg",
                 "PreviousMatchButton");
-        Icon  nextIcon = new ImageIcon ("Text Editor (1)\\icons\\next.jpg",
+        Icon  nextIcon = new ImageIcon ("icons/next.jpg",
                 "NextMatchButton");
 
         JButton saveButton = new JButton(saveIcon);
@@ -199,7 +199,6 @@ public class TextEditor extends JFrame {
         scrollPane.setHorizontalScrollBarPolicy(ScrollPaneConstants.HORIZONTAL_SCROLLBAR_ALWAYS);
         scrollPane.setBorder(new EmptyBorder(new Insets(0, 10, 10, 10)));
         add(BorderLayout.CENTER, scrollPane);
-        add(jfc);
     }
 
     public void saveFile(JFileChooser jfc, JTextArea textArea) {
